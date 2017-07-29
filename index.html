@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__getbootstrap_com"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>APOS &middot; Order Online</title>
+    
+    <!-- APOS Favicon -->
+        <link rel="shortcut icon" href="img/APOS-favicon.gif">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    </head>
+
+    <body data-gr-c-s-loaded="true">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <img id="apos-logo" src="img/APOS%20Logo.svg">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" id="notification-icon">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="profile-icon" class="rounded-circle" src="img/profile-picture.jpg"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-shopping-basket subnav-logo" aria-hidden="true"></i> Basket</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="fa fa-heart subnav-logo" aria-hidden="true"></i> Favourites</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="fa fa-list-ul subnav-logo" aria-hidden="true"></i> Orders</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="fa fa-cog subnav-logo" aria-hidden="true"></i> Account</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="fa fa-sign-in subnav-logo" aria-hidden="true"></i> Sign in</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li class="active"><a href="#">Profile</a></li>
+                        <li><a href="#about">Favourites</a></li>
+                        <li><a href="#contact">Feedback</a></li>
+                        <li><a href="#contact">Rewards</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container pt-1">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card card-profile mb-1">
+                        <img class="card-img-top" src="img/gandhi-midpic.gif" alt="Card image cap">
+                        <div class="card-block text-center">
+                            <a href="#">
+                                <img class="card-profile-img" src="img/gandhi-profile.svg">
+                            </a>
+                            <h4 class="card-title">The Gandhi Restaurant</h4>
+                            <p class="card-text mb-1">The finest indian cuisine in Portsmouth since 1979.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-nav mb-1">
+                        <ul>
+                            <a href="#">
+                                <li>
+                                    Starters <span>(10)</span>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    Mains <span>(15)</span>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    Desserts <span>(8)</span>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    Sides <span>(12)</span>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    Drinks <span>(35)</span>
+                                </li>
+                            </a>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="menu-table">
+                        
+                        <h3>Menu</h3>
+                        <h4 id="starters">Starters</h4>
+                        <p>The following can be prepared with Vegetable, Chicken or Lamb, Tiger Prawns. Rice not included. 
+                        <br>
+                        Add £1.00 for Chicken, Lamb or Lamb Tikka
+                        <br>
+                        Add £4.00 for King Prawn
+                        </p>
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th style="width: 70%;">
+                                        Item
+                                    </th>
+                                    <th>
+                                        Price
+                                    </th>
+                                    <th>
+                                        Order
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                        
+                        <h4 id="starters">Mains</h4>
+                        <p>The following can be prepared with Vegetable, Chicken or Lamb, Tiger Prawns. Rice not included. 
+                        <br>
+                        Add £1.00 for Chicken, Lamb or Lamb Tikka
+                        <br>
+                        Add £4.00 for King Prawn
+                        </p>
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th style="width: 70%;">
+                                        Item
+                                    </th>
+                                    <th>
+                                        Price
+                                    </th>
+                                    <th>
+                                        Order
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                        
+                        <h4 id="starters">Desserts</h4>
+                        <p>The following can be prepared with Vegetable, Chicken or Lamb, Tiger Prawns. Rice not included. 
+                        <br>
+                        Add £1.00 for Chicken, Lamb or Lamb Tikka
+                        <br>
+                        Add £4.00 for King Prawn
+                        </p>
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th style="width: 70%;">
+                                        Item
+                                    </th>
+                                    <th>
+                                        Price
+                                    </th>
+                                    <th>
+                                        Order
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <h5>Onion Baahji</h5>
+                                        <p>Contains eggs, flour, herbs and spices.</p>
+                                    </td>
+                                    <td>
+                                        <strong>£3.95</strong>
+                                    </td>
+                                    <td class="options">
+                                        <div class="dropdown dropdown-options">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></a>
+                                            <div class="dropdown-menu">
+                                                <h5>Select an option</h5>
+                                                <label>
+                                                    <input type="radio" value="option1" name="options_1"> Large <span>+ £3.00</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="option2" name="options_1"> Extra Large <span>+ £5.00</span>
+                                                </label>
+                                                <h5>Add ingredients</h5>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Tomato <span>+ £0.50</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" value=""> Extra Peppers <span>+ £0.50</span>
+                                                </label>
+                                                <a href="#" class="btn btn-primary">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+
+
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="basket">
+                            <h3>Your order</h3>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="remove_item"><i class="fa fa-minus-circle" aria-hidden="true"></i></a> <strong>1x</strong> Enchiladas
+                                        </td>
+                                        <td>
+                                            <strong class="pull-right">£11.00</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#0" class="remove_item"><i class="fa fa-minus-circle" aria-hidden="true"></i></a> <strong>2x</strong> Burrito
+                                        </td>
+                                        <td>
+                                            <strong class="pull-right">£14.00</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#0" class="remove_item"><i class="fa fa-minus-circle" aria-hidden="true"></i></a> <strong>1x</strong> Chicken
+                                        </td>
+                                        <td>
+                                            <strong class="pull-right">£20.00</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#0" class="remove_item"><i class="fa fa-minus-circle" aria-hidden="true"></i></a> <strong>2x</strong> Corona Beer
+                                        </td>
+                                        <td>
+                                            <strong class="pull-right">£9.00</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#0" class="remove_item"><i class="fa fa-minus-circle" aria-hidden="true"></i></a> <strong>2x</strong> Cheese Cake
+                                        </td>
+                                        <td>
+                                            <strong class="pull-right">£12.00</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <div class="row" id="options_2">
+
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>  Delivery</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>  Takeaway</label>
+                                    </div>
+                                </div>
+                            </div><!-- Edn options 2 -->
+
+                            <hr>
+                            <table class="table table_summary">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Subtotal <span class="pull-right">£56.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Delivery fee <span class="pull-right">£10.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="total">
+                                            TOTAL <span class="pull-right">£66.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <a class="btn btn-primary" href="#">Order now</a>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+        <section>
+
+
+        </section>
+
+
+        <!-- Bootstrap core JavaScript
+================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+
+        <div class="grammarly-disable-indicator"></div>
+
+    </body>
+
+</html>
